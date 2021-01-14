@@ -1,0 +1,115 @@
+$ms: 375px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@media (max-width: $ms) {
+  .project-container .project .entry-content .project-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: $sm) {
+  #home-wrapper {
+    padding: 2.5rem 1rem !important;
+    .container {
+      .intro-h1 {
+        font-size: 2.5rem;
+      }
+      .intro-desc {
+        font-size: 1.2rem;
+      }
+      .theme-btn {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .site-footer {
+    padding: 1rem 0;
+    .container {
+      gap: 1.5rem !important;
+    }
+  }
+  .view-btn {
+    margin-top: 1rem;
+  }
+  // contact form
+  .contact-form-container {
+    .wpcf7 {
+      padding: 0;
+      border: none;
+    }
+    .wpcf7-form {
+      p:nth-of-type(4) {
+        text-align: center !important;
+      }
+      .wpcf7-form-control-wrap {
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  // .menu-primary-menu-container {
+  //   background-color: $color-primary;
+  //   .menu {
+  //     .menu-item {
+  //       a {
+  //         color: $color-light !important;
+  //       }
+  //     }
+  //   }
+  // }
+  .main-navigation {
+    flex-wrap: wrap !important;
+  }
+
+  #home-wrapper {
+    padding: 2rem;
+    .intro-h1 {
+      font-size: 4rem;
+    }
+  }
+  .site-footer {
+    .container {
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+  }
+  .project-container .project .entry-content {
+    flex-direction: column;
+    .project-content {
+      text-align: center;
+      .theme-title {
+        justify-content: center;
+      }
+    }
+  }
+  .blogs-container .post {
+    .entry-content {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .menu-primary-menu-container #primary-menu {
+    justify-content: flex-end !important;
+  }
+  .search-desktop {
+    display: none;
+  }
+  .blogs-container {
+    flex-direction: column;
+  }
+  .project-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: $xl) {
+}
