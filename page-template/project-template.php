@@ -28,7 +28,7 @@
               <div class="entry-content">
                 <div class="project-img">
                   <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="<?php the_title(); ?>"> 
-                </div>
+                </div>  
                 <div class="project-content">
                   <p class="theme-site" ><?php echo the_field('what_theme') ?></p>
                   <div class="theme-title">

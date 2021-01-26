@@ -11,31 +11,17 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-footer">
-				<?php base_underscore_entry_footer(); ?>
-			</div>
-			<div class="entry-meta">
-				<?php
-				base_underscore_posted_on();
-				base_underscore_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-			<!-- .entry-footer -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
+        <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+        <p class="theme-site" ><?php echo the_field('what_theme') ?></p>
+        <p><?php echo the_field('version') ?></p>
+	</header>
 	<?php base_underscore_post_thumbnail(); ?>
-
+	<div class="btn-links">
+		<a href="<?php echo the_field('code_link') ?>" class="demo-link" ><i class="fa fa-code"></i> View on Github</a>
+		<a href="<?php echo the_field('demo_link') ?>" class="demo-link" ><i class="fa fa-eye"></i> Demo</a>
+	</div>
 	<div class="entry-content">
+		<h4 class="entry-desc" >Description:</h4>
 		<?php
 		the_content(
 			sprintf(
@@ -51,15 +37,6 @@
 				wp_kses_post( get_the_title() )
 			)
 		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'base-underscore' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
+        ?>
 	</div><!-- .entry-content -->
-
-	
 </article><!-- #post-<?php the_ID(); ?> -->
