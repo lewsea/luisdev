@@ -30,7 +30,7 @@
       <br>
       <span class="now-im-motivated">― Vergil awaiting Dante's arrival</span></p>
       <h4 class="about-title">Hobbies</h4>
-      <p class="about-desc">When i'm not coding or designing i usually play games in my phone or draw in my notebook mostly just a sketch when i feel motivated. I also watch anime and dramas mostly comedy and romance, or binge read the whole manga/webtoon i took interest in a day.</p>
+      <p class="about-desc">When i'm not coding or designing i usually play games in my phone or draw in my notebook mostly just a sketch when i feel motivated. I also watch anime and dramas mostly comedy and romance, or binge read the whole manga/webtoon i took interest in a day. Oh i also play <a href="https://www.chess.com/member/lewsea">Chess</a>.</p>
       <h4 class="about-title">Follow</h4>
         <div class="about-socials">
             <a href=""><i>Facebook</i></a>
