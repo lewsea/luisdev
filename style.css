@@ -1701,6 +1701,15 @@ body {
   padding: 0.25em 0.36em;
 }
 
+.related-blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .related-blog-block {
   width: 100%;
   max-width: 350px;

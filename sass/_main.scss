@@ -644,6 +644,12 @@ body {
   }
 }
 
+.related-blog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 .related-blog-block {
   width: 100%;
   max-width: 350px;

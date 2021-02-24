@@ -12,7 +12,7 @@
       <h2 class="title "> Projects </h2>
     </div>
     <div class="container-desc">
-      <p>Simple and clean User Interface for users.</p>
+      <p>Collection of my projects from a simple landing page to a WordPress Woocommerce theme.</p>
     </div>
     <div class="project-container page-project">
         <?php 
@@ -27,7 +27,9 @@
             <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
               <div class="entry-content">
                 <div class="project-img">
-                  <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="<?php the_title(); ?>"> 
+                    <a href="<?php the_permalink();?>">
+                        <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="<?php the_title(); ?>"> 
+                    </a>
                 </div>  
                 <div class="project-content">
                   <p class="theme-site" ><?php echo the_field('what_theme') ?></p>
