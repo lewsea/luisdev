@@ -12,7 +12,7 @@
       <h2 class="title "> Projects </h2>
     </div>
     <div class="container-desc">
-      <p>Collection of my projects from a simple landing page to a WordPress Woocommerce theme.</p>
+      <p>Collection of my WordPress Themes.</p>
     </div>
     <div class="project-container page-project">
         <?php 

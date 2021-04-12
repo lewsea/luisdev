@@ -14,10 +14,10 @@
 	<footer id="colophon" class="site-footer">
 		<div class="container">
 			<div class="footer-socials">
-				<a href=""><i class="fa fa-facebook"></i></a>
-				<a href=""><i class="fa fa-github"></i></a>
-				<a href=""><i class="fa fa-linkedin"></i></a>
-				<a href=""><i class="fa fa-twitter"></i></a>
+				<a href=""><i class="fab fa-facebook"></i></a>
+				<a href=""><i class="fab fa-github"></i></a>
+				<a href=""><i class="fab fa-linkedin"></i></a>
+				<a href=""><i class="fab fa-twitter"></i></a>
 			</div>
 			<p class="blockquote-footer">
 				Built with <i class="fa fa-heart"></i> by <a href="">Luis Gudmalin</a>

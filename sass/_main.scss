@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 $color-primary: #292b2c;
 $color-secondary: #0275d8;
@@ -6,7 +6,7 @@ $color-background: #f6f6f6;
 $color-text: #1a252a;
 $color-light: #fff;
 $color-anchor: #292b2c;
-$font-family: 'Roboto', sans-serif;
+$font-family: "Roboto", sans-serif;
 $font-weight-strong: 500;
 $font-size-h1: 5rem;
 $font-size-h2: 3rem;
@@ -73,7 +73,7 @@ body {
             height: 0.2em;
             background-color: $color-secondary;
             opacity: 1 !important;
-            content: '';
+            content: "";
             margin: 0 auto;
           }
         }
@@ -90,7 +90,7 @@ body {
             height: 0.2em;
             background-color: $color-secondary;
             opacity: 0.2;
-            content: '';
+            content: "";
             margin: 0 auto;
             transition: width ease-in-out 0.8s;
           }
@@ -110,8 +110,9 @@ body {
 }
 
 .menu-toggle {
-  border: 1px solid $color-primary;
-  background-color: $color-background;
+  border: 1px solid $color-primary !important;
+  border-radius: 0;
+  background-color: $color-light;
   .fa {
     line-height: 21px;
   }
@@ -279,6 +280,7 @@ body {
   // flex-direction: column;
   gap: 2rem;
   .project {
+    flex: 1;
     border: 5px solid $color-primary;
     &:hover {
       border: 5px dashed $color-primary;
@@ -435,7 +437,7 @@ body {
               height: 0.2em;
               background-color: $color-anchor;
               opacity: 0.2;
-              content: '';
+              content: "";
               margin: 0 auto;
               transition: width ease-in-out 0.8s;
             }
@@ -497,37 +499,42 @@ body {
 }
 
 .blogs-page {
-  flex-direction: column;
-  align-items: center;
-  .post {
-    max-width: 650px;
-    width: 100%;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  .blogs-wrapper-page {
+    flex-direction: column !important;
+    align-items: center;
+    .post {
+      max-width: 650px;
+      width: 100%;
+    }
+    // .entry-content {
+    // display: flex;
+    // .blog-img {
+    //   flex: 40%;
+    //   overflow: hidden;
+    //   cursor: pointer;
+    //   border: 4px solid $color-primary;
+    //   transition: ease-in-out 0.5s;
+    //   &:hover {
+    //     border: 4px dashed $color-primary;
+    //   }
+    // img {
+    //   height: 300px;
+    //   width: 100%;
+    //   height: 100%;
+    //   transition: ease-in-out 0.5s;
+    //   &:hover {
+    //     transform: scale(1.1);
+    //   }
+    // }
+    // }
+    // .blog-content {
+    //   flex: 60%;
+    // }
+    // }
   }
-  // .entry-content {
-  // display: flex;
-  // .blog-img {
-  //   flex: 40%;
-  //   overflow: hidden;
-  //   cursor: pointer;
-  //   border: 4px solid $color-primary;
-  //   transition: ease-in-out 0.5s;
-  //   &:hover {
-  //     border: 4px dashed $color-primary;
-  //   }
-  // img {
-  //   height: 300px;
-  //   width: 100%;
-  //   height: 100%;
-  //   transition: ease-in-out 0.5s;
-  //   &:hover {
-  //     transform: scale(1.1);
-  //   }
-  // }
-  // }
-  // .blog-content {
-  //   flex: 60%;
-  // }
-  // }
 }
 
 .contact-form-container {
@@ -620,6 +627,9 @@ body {
         }
       }
       .entry-content {
+        max-width: 950px;
+        width: 100%;
+        margin: 2.5rem auto;
         padding: 2rem;
         border: 4px dashed $color-primary;
         p {
@@ -631,23 +641,18 @@ body {
 }
 
 .related-title {
-  display: inline-block;
-  background-color: #0275d8;
-  color: #f6f6f6;
+  color: #1a252a;
   padding: 0.2em 0.3em;
   margin-bottom: 0.65em;
   font-size: 2rem;
   font-size: clamp(2rem, 4vw, 2rem);
   transition: padding 0.2s ease 0s;
-  &:hover {
-    padding: 0.25em 0.36em;
-  }
 }
 
 .related-blog {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .related-blog-block {
@@ -710,8 +715,10 @@ body {
       }
     }
     .entry-content {
-      margin: 2.5rem 0;
-      padding: 1rem;
+      max-width: 950px;
+      width: 100%;
+      margin: 2.5rem auto;
+      padding: 2rem;
       border: 4px dashed $color-primary;
       .entry-desc {
         font-size: 1.5rem;
@@ -799,7 +806,7 @@ body {
         background-color: $color-secondary;
       }
       &::marker {
-        content: '👉';
+        content: "👉";
       }
     }
   }
@@ -900,4 +907,98 @@ body {
   }
 }
 
-@import 'responsive';
+.sidebar {
+  padding: 10px 3rem;
+  border: 1px solid #e2e2e2;
+  width: min-content;
+  height: min-content;
+}
+.widget-area {
+  .widget {
+    .widget-title {
+      display: inline-grid;
+      padding: 0.5rem;
+      font-size: 1.25rem;
+      &::after {
+        width: 100%;
+        height: 0.1em;
+        background-color: $color-secondary;
+        content: "";
+        margin: 0 auto;
+      }
+    }
+    ul {
+      margin: 0;
+      li {
+        list-style: none;
+        padding: 5px;
+        padding-inline-start: 1ch;
+        &::marker {
+          content: "👉";
+        }
+        a {
+          text-decoration: none;
+          color: #292b2c;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.blogs-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  font-size: 1.25rem;
+  .page-numbers {
+    color: rgba($color-secondary, 0.5);
+    text-decoration: none;
+    padding: 10px 15px;
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+  .current {
+    color: $color-light;
+    background-color: $color-secondary;
+    &:hover {
+      color: $color-light;
+    }
+  }
+}
+
+.single-pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+  .prev-link,
+  .next-link {
+    font-size: 1.25rem;
+    .fa {
+      margin-right: 1rem;
+      &:last-of-type {
+        margin-left: 1rem;
+      }
+    }
+    &:hover {
+      .fa {
+        padding-right: 1rem;
+        &:last-of-type {
+          padding-left: 1rem;
+        }
+      }
+    }
+    .fa {
+      transition: 0.3s ease-in-out;
+    }
+    a {
+      text-decoration: none;
+      color: $color-secondary;
+    }
+  }
+}
+
+@import "responsive";

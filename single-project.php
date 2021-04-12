@@ -28,6 +28,12 @@ get_header();
 
 				endwhile; // End of the loop.
 			?>
+
+            <div class="single-pagination">
+                <?php previous_post_link( $format = '<div class="prev-link"> <i class="fa fa-long-arrow-alt-left"></i> %link </div>' ) ?>
+                <?php next_post_link($format = '<div class="next-link"> %link <i class="fa fa-long-arrow-alt-right"></i> </div>'); ?>
+            </div>
+
 			<?php
 			$tags = wp_get_post_tags($post->ID);
 			if ($tags) {

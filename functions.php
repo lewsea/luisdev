@@ -142,7 +142,7 @@ add_action( 'widgets_init', 'base_underscore_widgets_init' );
  */
 function base_underscore_scripts() {
 	wp_enqueue_style( 'base-underscore-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style('fontawesome', '//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+	wp_enqueue_style('fontawesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 	wp_style_add_data( 'base-underscore-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'base-underscore-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
@@ -200,14 +200,11 @@ function project_post_type() {
 		)
 		)
 	);
+    // Adding tags to custom posts types
+    register_taxonomy_for_object_type( 'post_tag', 'project' );
 }
 
 add_action('init', 'project_post_type');
 
-// Adding tags to custom posts types
-
-function gp_register_taxonomy_for_object_type() {
-    register_taxonomy_for_object_type( 'post_tag', 'project' );
-};
-
-add_action( 'init', 'gp_register_taxonomy_for_object_type' );
+// For import, comment out after
+// add_filter( 'http_request_host_is_external', '__return_true' );

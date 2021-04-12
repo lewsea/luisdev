@@ -34,10 +34,10 @@
       <p class="about-desc">When i'm not coding or designing i usually play games in my phone or draw in my notebook mostly just a sketch when i feel motivated. I also watch anime and dramas mostly comedy and romance, or binge read the whole manga/webtoon i took interest in a day. Oh i also play <a href="https://www.chess.com/member/lewsea">Chess</a>.</p>
       <h4 class="about-title">Follow</h4>
         <div class="about-socials">
-            <a href=""><i class="fa fa-facebook"></i> Facebook</a>
-            <a href=""><i class="fa fa-github"></i> Github</a>
-            <a href=""><i class="fa fa-linkedin"></i> LinkedIn</a>
-            <a href=""><i class="fa fa-twitter"></i> Twitter</a>
+            <a href=""><i class="fab fa-facebook"></i> Facebook</a>
+            <a href=""><i class="fab fa-github"></i> Github</a>
+            <a href=""><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href=""><i class="fab fa-twitter"></i> Twitter</a>
         </div>
     </div>
   </div>

@@ -163,3 +163,49 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 		do_action( 'wp_body_open' );
 	}
 endif;
+
+// Post Pagination  
+
+if ( ! function_exists( 'post_pagination' ) ) :
+    function post_pagination() {
+        global $wp_query;
+        $pager = 99; // need an unlikely integer
+
+            echo paginate_links( array(
+                'base' => str_replace( $pager, '%#%', esc_url( get_pagenum_link( $pager ) ) ),
+                'format' => '?paged=%#%',
+                'current' => max( 1, get_query_var('paged') ),
+                'total' => $wp_query->max_num_pages,
+                'prev_text'    => ('<i class="fa fa-arrow-left"></i>'),
+                'next_text'    => ('<i class="fa fa-arrow-right"></i>'),
+            ) );
+    }
+endif;
+
+// Lazy[like me] Load 
+
+function get_the_post_custom_thumbnail( $post_id, $size = 'featured-thumbnail', $additional_attributes = [] ) {
+	$custom_thumbnail = '';
+
+	if ( null === $post_id ) {
+		$post_id = get_the_ID();
+	}
+
+	if ( has_post_thumbnail( $post_id ) ) {
+		$default_attributes = [
+			'loading' => 'lazy'
+		];
+
+		$attributes = array_merge( $additional_attributes, $default_attributes );
+
+		$custom_thumbnail = wp_get_attachment_image(
+			get_post_thumbnail_id( $post_id ),
+			$size,
+			false,
+			$attributes
+		);
+	}
+
+	return $custom_thumbnail;
+}
+
