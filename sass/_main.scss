@@ -478,6 +478,7 @@ body {
   text-align: center;
   padding: 3px;
   p {
+    font-size: 12px;
     margin: 0;
     text-align: center;
   }
@@ -1007,29 +1008,74 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 4rem 0;
-  .prev-link,
-  .next-link {
-    font-size: 1.25rem;
-    .fa {
-      margin-right: 1rem;
-      &:last-of-type {
-        margin-left: 1rem;
+  .next {
+    text-align: right;
+  }
+  .prev,
+  .next {
+    p {
+      display: inline-block;
+      font-size: 1.4rem;
+      &::after {
+        display: block;
+        width: 100%;
+        height: 0.1em;
+        background-color: $color-secondary;
+        content: "";
+        margin: 0 auto;
       }
-    }
-    &:hover {
-      .fa {
-        padding-right: 1rem;
-        &:last-of-type {
-          padding-left: 1rem;
-        }
-      }
-    }
-    .fa {
-      transition: 0.3s ease-in-out;
     }
     a {
-      text-decoration: none;
-      color: $color-secondary;
+      position: relative;
+      display: block;
+      color: $color-light;
+      &:hover {
+        img {
+          opacity: 1;
+          filter: blur(0);
+        }
+        .prev-link,
+        .next-link {
+          opacity: 1;
+          .fa {
+            padding-right: 1.5rem;
+          }
+        }
+      }
+      .prev-link,
+      .next-link {
+        border-radius: $border-radius;
+        opacity: 0.9;
+        font-size: 1.25rem;
+        color: $color-light;
+        background-color: $color-primary;
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        h4 {
+          margin: 0;
+        }
+        .fa {
+          transition: 0.3s ease-in-out;
+        }
+      }
+      .next-link {
+        left: 70%;
+      }
+      img {
+        transition: ease-in-out 0.3s;
+        opacity: 0.8;
+        max-width: 400px;
+        filter: blur(1px);
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
 }

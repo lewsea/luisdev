@@ -101,7 +101,11 @@ $xl: 1200px;
     margin: auto;
     width: max-content;
   }
-  .single-blog-pagination {
+  .single-pagination {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .single-pagination {
     flex-direction: column;
     gap: 3rem;
     .next-link {
