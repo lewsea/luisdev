@@ -14,10 +14,10 @@
 	<footer id="colophon" class="site-footer">
 		<div class="container">
 			<div class="footer-socials">
-				<a href=""><i class="fab fa-facebook"></i></a>
-				<a href=""><i class="fab fa-github"></i></a>
-				<a href=""><i class="fab fa-linkedin"></i></a>
-				<a href=""><i class="fab fa-twitter"></i></a>
+				<a href="https://https//www.linkedin.com/in/luis-gudmalin-8b0349195/"><i class="fab fa-linkedin"></i></a>
+				<a href="https://github.com/lewsea"><i class="fab fa-github"></i></a>
+				<a href="https://codepen.io/Lewsea"><i class="fab fa-codepen"></i></a>
+				<a href="https://twitter.com/leewseea"><i class="fab fa-twitter"></i></a>
 			</div>
 			<p class="blockquote-footer">
 				Built with <i class="fa fa-heart"></i> by <a href="">Luis Gudmalin</a>
