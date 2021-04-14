@@ -39,7 +39,7 @@ body {
 // header
 .site-header {
   border-bottom: 2px solid $color-primary;
-  box-shadow: $box-shadow;
+  box-shadow: 2px 2px 10px rgba(170, 170, 170, 0.5);
   .container {
     display: flex;
     justify-content: space-between;
@@ -1004,6 +1004,37 @@ body {
   }
 }
 
+.single-blog-pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+  .prev-link,
+  .next-link {
+    font-size: 1.25rem;
+    a {
+      text-decoration: none;
+      color: $color-secondary;
+    }
+    .fa {
+      margin-right: 1rem;
+      &:last-of-type {
+        margin-left: 1rem;
+      }
+    }
+    &:hover {
+      .fa {
+        padding-right: 1rem;
+        &:last-of-type {
+          padding-left: 1rem;
+        }
+      }
+    }
+    .fa {
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
 .single-pagination {
   display: flex;
   justify-content: space-between;
@@ -1034,11 +1065,16 @@ body {
           opacity: 1;
           filter: blur(0);
         }
-        .prev-link,
-        .next-link {
+        .prev-link {
           opacity: 1;
           .fa {
             padding-right: 1.5rem;
+          }
+        }
+        .next-link {
+          opacity: 1;
+          .fa {
+            padding-left: 1.5rem;
           }
         }
       }

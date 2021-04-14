@@ -59,7 +59,7 @@ get_header();
                 </div>
 
                 <div class="container-title">
-                    <h3 class="title">More of my Project</h3>
+                    <h3 class="title">More of my Projects</h3>
                 </div>
 
                 <div class="project-container">

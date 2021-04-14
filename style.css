@@ -985,8 +985,8 @@ body {
 
 .site-header {
   border-bottom: 2px solid #292b2c;
-  -webkit-box-shadow: 2px 2px 10px #aaa;
-          box-shadow: 2px 2px 10px #aaa;
+  -webkit-box-shadow: 2px 2px 10px rgba(170, 170, 170, 0.5);
+          box-shadow: 2px 2px 10px rgba(170, 170, 170, 0.5);
 }
 
 .site-header .container {
@@ -2156,6 +2156,53 @@ body {
   color: #fff;
 }
 
+.single-blog-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 4rem 0;
+}
+
+.single-blog-pagination .prev-link,
+.single-blog-pagination .next-link {
+  font-size: 1.25rem;
+}
+
+.single-blog-pagination .prev-link a,
+.single-blog-pagination .next-link a {
+  text-decoration: none;
+  color: #0275d8;
+}
+
+.single-blog-pagination .prev-link .fa,
+.single-blog-pagination .next-link .fa {
+  margin-right: 1rem;
+}
+
+.single-blog-pagination .prev-link .fa:last-of-type,
+.single-blog-pagination .next-link .fa:last-of-type {
+  margin-left: 1rem;
+}
+
+.single-blog-pagination .prev-link:hover .fa,
+.single-blog-pagination .next-link:hover .fa {
+  padding-right: 1rem;
+}
+
+.single-blog-pagination .prev-link:hover .fa:last-of-type,
+.single-blog-pagination .next-link:hover .fa:last-of-type {
+  padding-left: 1rem;
+}
+
+.single-blog-pagination .prev-link .fa,
+.single-blog-pagination .next-link .fa {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 .single-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2201,17 +2248,23 @@ body {
 }
 
 .single-pagination .prev a:hover .prev-link,
-.single-pagination .prev a:hover .next-link,
-.single-pagination .next a:hover .prev-link,
-.single-pagination .next a:hover .next-link {
+.single-pagination .next a:hover .prev-link {
   opacity: 1;
 }
 
 .single-pagination .prev a:hover .prev-link .fa,
-.single-pagination .prev a:hover .next-link .fa,
-.single-pagination .next a:hover .prev-link .fa,
-.single-pagination .next a:hover .next-link .fa {
+.single-pagination .next a:hover .prev-link .fa {
   padding-right: 1.5rem;
+}
+
+.single-pagination .prev a:hover .next-link,
+.single-pagination .next a:hover .next-link {
+  opacity: 1;
+}
+
+.single-pagination .prev a:hover .next-link .fa,
+.single-pagination .next a:hover .next-link .fa {
+  padding-left: 1.5rem;
 }
 
 .single-pagination .prev a .prev-link,
@@ -2366,14 +2419,14 @@ body {
             flex-direction: column;
     gap: 3rem;
   }
-  .single-pagination {
+  .single-blog-pagination {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 3rem;
   }
-  .single-pagination .next-link {
+  .single-blog-pagination .next-link {
     text-align: right;
   }
 }

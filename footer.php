@@ -29,7 +29,7 @@
 		</div>
 	</footer>
 	<div class="credit">
-		<p><a href="https://stylestage.dev/styles/simple-blue-roboto/">Styles</a> by <a href="programacionYmas.com">JCarlosR</a>. Thanks <3 </p>
+		<p><a href="https://stylestage.dev/styles/simple-blue-roboto/">Styles</a> by <a href="http://programacionymas.com/">JCarlosR</a>. Thanks <3 </p>
 	</div>
 </div>
 
