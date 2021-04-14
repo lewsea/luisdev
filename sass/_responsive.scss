@@ -54,6 +54,9 @@ $xl: 1200px;
   .sidebar {
     width: min-content !important;
   }
+  .single-project-wrapper .project .btn-links a {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: $md) {

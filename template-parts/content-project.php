@@ -38,5 +38,9 @@
 			)
 		);
         ?>
+        <h4 class="entry-desc" >Process:</h4>
+        <h4 class="entry-desc" >Tools Used:</h4>
+        <ul>the ul list of all tools</ul>
+        <!-- new field -->
 	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->

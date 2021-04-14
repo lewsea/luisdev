@@ -4,61 +4,41 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package Base_Underscore
+ * @package luisdev
  */
-
-get_header();
 ?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?> >
+<?php wp_body_open(); ?>
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'luisdev' ); ?></a>
 
 	<main id="primary" class="site-main">
-
 		<div class="container">
-
 			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'base-underscore' ); ?></h1>
-				</header><!-- .page-header -->
-
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'base-underscore' ); ?></p>
-
-						<?php
-						get_search_form();
-
-						the_widget( 'WP_Widget_Recent_Posts' );
-						?>
-
-						<div class="widget widget_categories">
-							<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'base-underscore' ); ?></h2>
-							<ul>
-								<?php
-								wp_list_categories(
-									array(
-										'orderby'    => 'count',
-										'order'      => 'DESC',
-										'show_count' => 1,
-										'title_li'   => '',
-										'number'     => 10,
-									)
-								);
-								?>
-							</ul>
-						</div><!-- .widget -->
-
-						<?php
-						/* translators: %1$s: smiley */
-						$base_underscore_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'base-underscore' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$base_underscore_archive_content" );
-
-						the_widget( 'WP_Widget_Tag_Cloud' );
-						?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
+                <h1><?php esc_html_e('404 Not Found', 'luisdev'); ?></h1>
+                <h2><?php esc_html_e( 'It seems like you are lost, let\'s get you back on track.', 'luisdev'); ?></h2>
+                <?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
+				?>
+                <?php get_search_form(); ?>
+			</section>
 		</div>
-
-	</main><!-- #main -->
-
-<?php
-get_footer();
+	</main>
+</div>
+<?php wp_footer(); ?>
+</body>
+</html>
