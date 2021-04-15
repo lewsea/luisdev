@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Base_Underscore
+ * @package luisdev
  */
 
 ?>
@@ -21,19 +21,19 @@
 		if ( 'post' === get_post_type() ) :
 			?>
 			<div class="entry-footer">
-				<?php base_underscore_entry_footer(); ?>
+				<?php luisdev_entry_footer(); ?>
 			</div>
 			<div class="entry-meta">
 				<?php
-				base_underscore_posted_on();
-				base_underscore_posted_by();
+				luisdev_posted_on();
+				luisdev_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 			<!-- .entry-footer -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php base_underscore_post_thumbnail(); ?>
+	<?php luisdev_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -41,7 +41,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'base-underscore' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'luisdev' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -54,7 +54,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'base-underscore' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'luisdev' ),
 				'after'  => '</div>',
 			)
 		);

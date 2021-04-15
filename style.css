@@ -1818,17 +1818,19 @@ body {
   width: 100%;
   line-height: 1.2rem;
   font-family: monospace;
-  background: #f1f1f1;
-  padding: 1.5rem;
+  background: #292b2c;
+  color: #fff;
+  padding: 0 1.5rem 1rem;
   position: relative;
+  font-size: 14px;
 }
 
 .single-project-wrapper .project .entry-content .directory-structure p::before {
   content: "";
   display: inline-block;
-  width: 5px;
+  width: 6px;
   height: 100%;
-  background-color: rgba(2, 117, 216, 0.5);
+  background-color: rgba(2, 117, 216, 0.8);
   position: absolute;
   left: 0;
   border-radius: 30px;
@@ -2017,6 +2019,7 @@ body {
 }
 
 .search-page-container {
+  min-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

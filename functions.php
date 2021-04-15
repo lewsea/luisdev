@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Base_Underscore
+ * @package luisdev
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -12,7 +12,7 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
-if ( ! function_exists( 'base_underscore_setup' ) ) :
+if ( ! function_exists( 'luisdev_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -20,14 +20,14 @@ if ( ! function_exists( 'base_underscore_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function base_underscore_setup() {
+	function luisdev_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on Base Underscore, use a find and replace
-		 * to change 'base-underscore' to the name of your theme in all the template files.
+		 * to change 'luisdev' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'base-underscore', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'luisdev', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -50,7 +50,7 @@ if ( ! function_exists( 'base_underscore_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'base-underscore' ),
+				'menu-1' => esc_html__( 'Primary', 'luisdev' ),
 			)
 		);
 
@@ -76,7 +76,7 @@ if ( ! function_exists( 'base_underscore_setup' ) ) :
 		add_theme_support(
 			'custom-background',
 			apply_filters(
-				'base_underscore_custom_background_args',
+				'luisdev_custom_background_args',
 				array(
 					'default-color' => 'ffffff',
 					'default-image' => '',
@@ -103,7 +103,7 @@ if ( ! function_exists( 'base_underscore_setup' ) ) :
 		);
 	}
 endif;
-add_action( 'after_setup_theme', 'base_underscore_setup' );
+add_action( 'after_setup_theme', 'luisdev_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -112,22 +112,22 @@ add_action( 'after_setup_theme', 'base_underscore_setup' );
  *
  * @global int $content_width
  */
-function base_underscore_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'base_underscore_content_width', 640 );
+function luisdev_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'luisdev_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'base_underscore_content_width', 0 );
+add_action( 'after_setup_theme', 'luisdev_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function base_underscore_widgets_init() {
+function luisdev_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'base-underscore' ),
+			'name'          => esc_html__( 'Sidebar', 'luisdev' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'base-underscore' ),
+			'description'   => esc_html__( 'Add widgets here.', 'luisdev' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -135,23 +135,23 @@ function base_underscore_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'base_underscore_widgets_init' );
+add_action( 'widgets_init', 'luisdev_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function base_underscore_scripts() {
-	wp_enqueue_style( 'base-underscore-style', get_stylesheet_uri(), array(), _S_VERSION );
+function luisdev_scripts() {
+	wp_enqueue_style( 'luisdev-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style('fontawesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
-	wp_style_add_data( 'base-underscore-style', 'rtl', 'replace' );
+	wp_style_add_data( 'luisdev-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'base-underscore-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'luisdev-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'base_underscore_scripts' );
+add_action( 'wp_enqueue_scripts', 'luisdev_scripts' );
 
 /**
  * Implement the Custom Header feature.

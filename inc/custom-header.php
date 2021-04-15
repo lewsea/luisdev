@@ -8,39 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Base_Underscore
+ * @package luisdev
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses base_underscore_header_style()
+ * @uses luisdev_header_style()
  */
-function base_underscore_custom_header_setup() {
+function luisdev_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'base_underscore_custom_header_args',
+			'luisdev_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'base_underscore_header_style',
+				'wp-head-callback'   => 'luisdev_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'base_underscore_custom_header_setup' );
+add_action( 'after_setup_theme', 'luisdev_custom_header_setup' );
 
-if ( ! function_exists( 'base_underscore_header_style' ) ) :
+if ( ! function_exists( 'luisdev_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see base_underscore_custom_header_setup().
+	 * @see luisdev_custom_header_setup().
 	 */
-	function base_underscore_header_style() {
+	function luisdev_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

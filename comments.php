@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Base_Underscore
+ * @package luisdev
  */
 
 /*
@@ -28,18 +28,18 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title">
 			<?php
-			$base_underscore_comment_count = get_comments_number();
-			if ( '1' === $base_underscore_comment_count ) {
+			$luisdev_comment_count = get_comments_number();
+			if ( '1' === $luisdev_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'base-underscore' ),
+					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'luisdev' ),
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			} else {
 				printf( 
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $base_underscore_comment_count, 'comments title', 'base-underscore' ) ),
-					number_format_i18n( $base_underscore_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $luisdev_comment_count, 'comments title', 'luisdev' ) ),
+					number_format_i18n( $luisdev_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			}
@@ -65,7 +65,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'base-underscore' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'luisdev' ); ?></p>
 			<?php
 		endif;
 

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Base_Underscore
+ * @package luisdev
  */
 
 get_header();

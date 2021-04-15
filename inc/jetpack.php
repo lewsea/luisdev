@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Base_Underscore
+ * @package luisdev
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function base_underscore_jetpack_setup() {
+function luisdev_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'base_underscore_infinite_scroll_render',
+			'render'    => 'luisdev_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function base_underscore_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'base-underscore-style',
+				'stylesheet' => 'luisdev-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,12 +48,12 @@ function base_underscore_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'base_underscore_jetpack_setup' );
+add_action( 'after_setup_theme', 'luisdev_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function base_underscore_infinite_scroll_render() {
+function luisdev_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :
