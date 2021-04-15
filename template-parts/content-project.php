@@ -39,8 +39,15 @@
 		);
         ?>
         <h4 class="entry-desc" >Process:</h4>
+        <p></p>
         <h4 class="entry-desc" >Tools Used:</h4>
-        <ul>the ul list of all tools</ul>
-        <!-- new field -->
+        <div class="tools-used">
+            <?php echo the_field('tools_used'); ?>
+        </div>
+        <h4 class="entry-desc" >Directory Structure</h4>
+        <div class="directory-structure">
+            <?php echo the_field('file_structure'); ?>
+        </div>
+        
 	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->

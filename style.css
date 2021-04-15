@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 Theme Name: Luisdev
-Theme URI: localhost/luisdev
+Theme URI: luisgudmalin.online
 Author: luis gudmalin
 Author URI: https://github.com/lewsea
 Description: luisdev portfolio
@@ -1813,6 +1813,28 @@ body {
   border: 4px dashed #292b2c;
 }
 
+.single-project-wrapper .project .entry-content .directory-structure p {
+  display: block;
+  width: 100%;
+  line-height: 1.2rem;
+  font-family: monospace;
+  background: #f1f1f1;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.single-project-wrapper .project .entry-content .directory-structure p::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 100%;
+  background-color: rgba(2, 117, 216, 0.5);
+  position: absolute;
+  left: 0;
+  border-radius: 30px;
+  top: 0;
+}
+
 .single-project-wrapper .project .entry-content .entry-desc {
   font-size: 1.5rem;
   margin: 0;
@@ -2440,6 +2462,31 @@ body {
 
 .error-404 .input-group input {
   width: 100%;
+}
+
+.tools-used ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.tools-used ul li {
+  margin: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.15rem;
+}
+
+.tools-used ul li:hover {
+  background-color: #0275d8;
+  color: #fff;
 }
 
 @media (max-width: 375px) {
