@@ -39,7 +39,7 @@
 		);
         ?>
         <h4 class="entry-desc" >Process</h4>
-        <p></p>
+        <p><?php echo get_the_excerpt() ?></p>
         <h4 class="entry-desc" >Tools Used</h4>
         <div class="tools-used">
             <?php echo the_field('tools_used'); ?>

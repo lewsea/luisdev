@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages
+ * The template for displaying category pages
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -13,7 +13,7 @@ get_header();
 	<main id="primary" class="site-main">
         <div class="container">
 		<?php if ( have_posts() ) : ?>
-            <header class="page-header container-title">
+			<header class="page-header container-title">
 				<?php
 				the_archive_title( '<h1 class="archive-title">', '</h1>' );
 				the_archive_description( '<div class="archive-description">', '</div>' );
@@ -53,5 +53,4 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();
