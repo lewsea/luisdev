@@ -15,7 +15,7 @@
     <div class="about-info">
         <p class="about-header">Hey 👋 I'm <span>Luis</span>
         <br>
-        I am a <span>Wordpress Developer</span>.</p>
+        I am a <span>Wordpress Developer</span></p>
         <p class='about-desc'>I'm a 19 years old web developer in Philippines. It's been a year since i started doing web development <span>[</span> 
         <!-- <i> probably just a portion of it is the actual coding and the most part is suffering</i> -->
          <span>]</span>. I have build various WordPress Themes from a complex <a href="">E-Commerce Theme</a> to a simple custom <a href="">Blogging Theme</a> . I also do web design and i kinda enjoy doing it. My goal is to Join or Work in any opportunity that will help me grow in this Industry. I welcome challenging projects and enjoy working with all sorts of personalities. I'm always up for any opportunities whether you have a project I can help you with, a new hiring opportunity, or just want to say hi and ask me a question, please feel free to email me at <a href="mailto:luis.gudmalin@gmail.com">luis.gudmalin@gmail.com</a></p>

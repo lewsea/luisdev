@@ -30,9 +30,6 @@
         ?>
             <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
               <div class="entry-content">
-                <!-- <div class="project-img">
-                  <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="<?php the_title(); ?>"> 
-                </div> -->
                 <div class="project-content">
                   <p class="theme-site" ><?php echo the_field('what_theme') ?></p>
                   <div class="theme-title">
@@ -50,8 +47,10 @@
         <?php } wp_reset_query(); ?>
       </div>
       <div class="view-btn">
-					<a href="<?php echo site_url('/project');?>"><button class="theme-btn">View All <i class="fa fa-star-of-life"></i> </button></a>
-			</div>
+        <a href="<?php echo site_url('/project');?>">
+            <button class="theme-btn">View All <i class="fa fa-star-of-life"></i> </button>
+        </a>
+      </div>
   </div>
 </section>
 
@@ -72,9 +71,6 @@
       ?>
           <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
             <div class="entry-content">
-              <div class="blog-img">
-                <!-- <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="<?php the_title(); ?>"> -->
-              </div>
               <div class="blog-content">
                 <div class="blog-desc">
                   <a href="<?php the_permalink()?>">

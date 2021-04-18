@@ -205,6 +205,3 @@ function project_post_type() {
 }
 
 add_action('init', 'project_post_type');
-
-// For import, comment out after
-// add_filter( 'http_request_host_is_external', '__return_true' );
