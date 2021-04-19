@@ -1332,6 +1332,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 .project-container .project .entry-content .project-content {
@@ -1746,6 +1747,7 @@ body {
 
 .related-blog-block a {
   color: #fff;
+  text-decoration: none;
 }
 
 .related-blog-block a .blog-inner {
@@ -1811,6 +1813,73 @@ body {
   margin: 2.5rem auto;
   padding: 2rem;
   border: 4px dashed #292b2c;
+}
+
+.single-project-wrapper .project .entry-content .entry-block {
+  scroll-margin-top: 5rem;
+}
+
+.single-project-wrapper .project .entry-content .entry-block:not(:first-of-type) {
+  margin: 2rem 0;
+}
+
+.single-project-wrapper .project .entry-content .entry-block .project-navigation h2 {
+  margin: 0;
+  display: inline-block;
+  background-color: #0275d8;
+  color: #f6f6f6;
+  padding: 0.2em 0.3em;
+  text-align: center;
+  margin-bottom: 0.65em;
+  font-size: 2rem;
+  font-size: clamp(1rem, 4vw, 2rem);
+  -webkit-transition: padding 0.2s ease 0s;
+  transition: padding 0.2s ease 0s;
+}
+
+.single-project-wrapper .project .entry-content .entry-block .project-navigation h2:hover {
+  padding: 0.25em 0.36em;
+}
+
+.single-project-wrapper .project .entry-content .entry-block .project-navigation ul {
+  padding: 0;
+  margin: 0;
+  -webkit-padding-start: 2rem;
+          padding-inline-start: 2rem;
+}
+
+.single-project-wrapper .project .entry-content .entry-block .project-navigation ul li::marker {
+  font-size: 1.2rem;
+  color: #292b2c;
+}
+
+.single-project-wrapper .project .entry-content .entry-block .project-navigation ul li a {
+  text-decoration: none;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  padding: 0.5rem;
+  color: #0275d8;
+  font-size: 1.25rem;
+}
+
+.single-project-wrapper .project .entry-content .entry-block .project-navigation ul li a::after {
+  width: 50%;
+  height: 0.2em;
+  background-color: #0275d8;
+  opacity: 0.2;
+  content: "";
+  margin: 0 auto;
+  -webkit-transition: width ease-in-out 0.8s;
+  transition: width ease-in-out 0.8s;
+}
+
+.single-project-wrapper .project .entry-content .entry-block .project-navigation ul li a:hover::after, .single-project-wrapper .project .entry-content .entry-block .project-navigation ul li a:focus::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.single-project-wrapper .project .entry-content .entry-block .design-img {
+  margin: 2rem 0;
 }
 
 .single-project-wrapper .project .entry-content .directory-structure p {
@@ -2563,6 +2632,9 @@ body {
   }
   .single-project-wrapper .project .btn-links a {
     font-size: 14px;
+  }
+  .single-project-wrapper .project .entry-content {
+    padding: 1rem;
   }
 }
 

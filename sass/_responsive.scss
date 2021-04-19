@@ -57,6 +57,9 @@ $xl: 1200px;
   .single-project-wrapper .project .btn-links a {
     font-size: 14px;
   }
+  .single-project-wrapper .project .entry-content {
+    padding: 1rem;
+  }
 }
 
 @media (max-width: $md) {

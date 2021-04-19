@@ -311,6 +311,7 @@ body {
       .project-img,
       .project-content {
         flex: 1;
+        border-bottom: 1px solid #e2e2e2;
       }
       .project-content {
         padding: 1rem 2rem;
@@ -649,6 +650,7 @@ body {
   }
   a {
     color: $color-light;
+    text-decoration: none;
     .blog-inner {
       border: 1px solid $color-background;
     }
@@ -702,6 +704,64 @@ body {
       margin: 2.5rem auto;
       padding: 2rem;
       border: 4px dashed $color-primary;
+      .entry-block {
+        scroll-margin-top: 5rem;
+        &:not(:first-of-type) {
+          margin: 2rem 0;
+        }
+        .project-navigation {
+          h2 {
+            margin: 0;
+            display: inline-block;
+            background-color: $color-secondary;
+            color: #f6f6f6;
+            padding: 0.2em 0.3em;
+            text-align: center;
+            margin-bottom: 0.65em;
+            font-size: 2rem;
+            font-size: clamp(1rem, 4vw, 2rem);
+            transition: padding 0.2s ease 0s;
+            &:hover {
+              padding: 0.25em 0.36em;
+            }
+          }
+          ul {
+            padding: 0;
+            margin: 0;
+            padding-inline-start: 2rem;
+            li {
+              &::marker {
+                font-size: 1.2rem;
+                color: $color-anchor;
+              }
+              a {
+                text-decoration: none;
+                display: inline-grid;
+                padding: 0.5rem;
+                color: $color-secondary;
+                font-size: 1.25rem;
+                &::after {
+                  width: 50%;
+                  height: 0.2em;
+                  background-color: $color-secondary;
+                  opacity: 0.2;
+                  content: "";
+                  margin: 0 auto;
+                  transition: width ease-in-out 0.8s;
+                }
+                &:hover::after,
+                &:focus::after {
+                  opacity: 1;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        .design-img {
+          margin: 2rem 0;
+        }
+      }
       .directory-structure {
         p {
           display: block;
