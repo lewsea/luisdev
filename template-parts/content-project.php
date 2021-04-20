@@ -37,9 +37,9 @@
             <p><?php echo get_the_excerpt() ?></p>
         </div>
 		<div class="entry-block" id="design-development">
-            <h4 class="entry-desc" >Design And Development</h4>
+            <h4 class="entry-desc" >Design & Development</h4>
             <div class="design-img">
-                <img src="<?php echo the_field('design_image'); ?>" alt=""> 
+                <img src="<?php echo the_field('design_image'); ?>" alt="<?php echo the_title();?>" title="<?php echo the_title(); ?>"> 
             </div>
             <?php
             the_content(

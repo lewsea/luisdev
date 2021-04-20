@@ -1237,7 +1237,7 @@ body {
   padding: 4rem;
   background-color: #292b2c;
   color: #fff;
-  height: calc(100vh - 156px);
+  height: calc(100vh - 124px);
 }
 
 #home-wrapper .intro-p {
@@ -1815,6 +1815,16 @@ body {
   border: 4px dashed #292b2c;
 }
 
+.single-project-wrapper .project .entry-content pre {
+  padding-top: 0 !important;
+  background-color: #e2e2e2;
+}
+
+.single-project-wrapper .project .entry-content a {
+  text-decoration: none;
+  color: #0275d8;
+}
+
 .single-project-wrapper .project .entry-content .entry-block {
   scroll-margin-top: 5rem;
 }
@@ -1920,18 +1930,6 @@ body {
 
 .single-project-wrapper .project .entry-content p {
   font-size: 1.15rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-}
-
-.single-project-wrapper .project .entry-content p a img {
-  padding: 10px;
-}
-
-.single-project-wrapper .project .entry-content p a img:hover {
-  border: 2px dashed #292b2c;
 }
 
 .about-info {

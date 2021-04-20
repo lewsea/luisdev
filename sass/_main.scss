@@ -245,7 +245,7 @@ body {
   padding: 4rem;
   background-color: $color-primary;
   color: $color-light;
-  height: calc(100vh - 156px);
+  height: calc(100vh - 124px);
   .intro-p {
     margin: 0;
     font-size: 1.5rem;
@@ -704,6 +704,14 @@ body {
       margin: 2.5rem auto;
       padding: 2rem;
       border: 4px dashed $color-primary;
+      pre {
+        padding-top: 0 !important;
+        background-color: #e2e2e2;
+      }
+      a {
+        text-decoration: none;
+        color: $color-secondary;
+      }
       .entry-block {
         scroll-margin-top: 5rem;
         &:not(:first-of-type) {
@@ -797,16 +805,6 @@ body {
       }
       p {
         font-size: $font-size-text;
-        display: flex;
-        gap: 1rem;
-        a {
-          img {
-            padding: 10px;
-            &:hover {
-              border: 2px dashed $color-primary;
-            }
-          }
-        }
       }
     }
   }
