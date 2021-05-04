@@ -27,6 +27,9 @@
 				<a href="mailto:luis.gudmalin@gmail.com">luis.gudmalin@gmail.com</a>
 			</div>
 		</div>
+        <div id="scroll-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
 	</footer>
 	<div class="credit">
 		<p><a href="https://stylestage.dev/styles/simple-blue-roboto/">Styles</a> by <a href="http://programacionymas.com/">JCarlosR</a>. Thanks <3 </p>

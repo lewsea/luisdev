@@ -39,7 +39,7 @@
                   </div> 
                   <p class="theme-desc" ><?php echo wp_trim_words(get_the_excerpt(), 25); ?></p>
                   <div class="theme-tags">
-                    <?php echo the_tags(); ?>
+                    <?php echo the_tags('Tags: ', ''); ?>
                   </div>
                   <a href="<?php the_permalink()?>" class="view-proj" >View Project</a>
                 </div>	
