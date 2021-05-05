@@ -16,3 +16,7 @@ function scrollToTop() {
 
 // When the DOM is loaded, this click handler is added to our scroll button
 $scrollButton.addEventListener("click", scrollToTop);
+
+// highlight
+hljs.highlightAll();
+  
