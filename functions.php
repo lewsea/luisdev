@@ -142,10 +142,12 @@ add_action( 'widgets_init', 'luisdev_widgets_init' );
  */
 function luisdev_scripts() {
 	wp_enqueue_style( 'luisdev-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'highlight-css', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/atom-one-dark.min.css', array(), _S_VERSION );
 	wp_enqueue_style('fontawesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 	wp_style_add_data( 'luisdev-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'luisdev-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'highlight-script', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'luisdev-script', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
