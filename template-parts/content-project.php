@@ -17,8 +17,8 @@
 	</header>
 	<?php luisdev_post_thumbnail(); ?>
 	<div class="btn-links">
-		<a href="<?php echo the_field('code_link') ?>" class="demo-link" ><i class="fa fa-code"></i> View on Github</a>
-		<a href="<?php echo the_field('demo_link') ?>" class="demo-link" ><i class="fa fa-eye"></i> Demo</a>
+		<a href="<?php echo the_field('code_link') ?>" target="_blank" class="demo-link" ><i class="fa fa-code"></i> Code on Github</a>
+		<a href="<?php echo the_field('demo_link') ?>" target="_blank" class="demo-link" ><i class="fa fa-eye"></i> View Demo</a>
 	</div>
 	<div class="entry-content">
         <div class="entry-block">

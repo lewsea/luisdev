@@ -942,6 +942,10 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+pre {
+	background: none !important;
+}
+
 .container {
 	max-width: 1290px;
 	width: 100%;
@@ -1083,6 +1087,11 @@ body {
 
 #searchform .input-group #s:hover {
 	border: 2px dashed #292b2c;
+}
+
+#searchform .input-group #s:focus {
+	outline: 2px dashed #292b2c !important;
+	border: none;
 }
 
 #searchform .input-group #searchsubmit {
@@ -1339,7 +1348,7 @@ body {
 	font-size: 1rem;
 	color: #fff;
 	background: #292b2c;
-	padding: 5px 8px;
+	padding: 10px 15px;
 	float: right;
 	box-shadow: 0.18em 0.18em #0275d8;
 	margin-top: 10px;
@@ -1692,11 +1701,6 @@ body {
 	border: 4px dashed #292b2c;
 }
 
-.single-project-wrapper .project .entry-content pre {
-	padding-top: 0 !important;
-	background-color: #e2e2e2;
-}
-
 .single-project-wrapper .project .entry-content a {
 	text-decoration: none;
 	color: #0275d8;
@@ -1734,7 +1738,7 @@ body {
 }
 
 .single-project-wrapper .project .entry-content .entry-block .project-navigation ul li::marker {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color: #292b2c;
 }
 
@@ -1743,7 +1747,7 @@ body {
 	display: inline-grid;
 	padding: 0.5rem;
 	color: #0275d8;
-	font-size: 1.25rem;
+	font-size: 1rem;
 }
 
 .single-project-wrapper .project .entry-content .entry-block .project-navigation ul li a::after {
@@ -1893,25 +1897,32 @@ body {
 }
 
 .about-info .about-skills {
+	flex: 1;
 	margin: 0;
+	line-height: 2.5rem;
 }
 
 .about-info .about-skills li {
 	width: max-content;
 	font-size: 1.2rem;
 	list-style: none;
-	padding: 5px;
 	padding-inline-start: 1ch;
-}
-
-.about-info .about-skills li:hover {
-	color: #fff;
-	text-decoration: none;
-	background-color: #0275d8;
 }
 
 .about-info .about-skills li::marker {
 	content: "👉";
+}
+
+.about-info .about-skills li a {
+	text-decoration: none;
+	color: #292b2c;
+	padding: 5px;
+}
+
+.about-info .about-skills li a:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #0275d8;
 }
 
 .about-socials {
@@ -2389,6 +2400,12 @@ body {
 .posts-navigation .nav-links .nav-previous a:focus::after {
 	opacity: 1;
 	width: 100%;
+}
+
+.tag-page {
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem auto;
 }
 
 @media (max-width: 375px) {
