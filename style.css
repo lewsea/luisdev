@@ -944,6 +944,25 @@ body {
 
 pre {
 	background: none !important;
+	padding: 0 2rem;
+}
+
+blockquote {
+	background: #f1f1f1;
+	padding: 1.5rem;
+	position: relative;
+}
+
+blockquote::before {
+	content: "";
+	display: inline-block;
+	width: 5px;
+	height: 100%;
+	background-color: rgba(2, 117, 216, 0.5);
+	position: absolute;
+	left: 0;
+	border-radius: 30px;
+	top: 0;
 }
 
 .container {
@@ -2408,6 +2427,11 @@ pre {
 	margin: 2rem auto;
 }
 
+#breadcrumbs span span a {
+	color: #292b2c;
+	text-decoration: none;
+}
+
 @media (max-width: 375px) {
 	.project-container .project .entry-content .project-content {
 		padding: 1rem;
@@ -2476,6 +2500,11 @@ pre {
 	}
 	.project-container .project .entry-content {
 		flex-direction: column;
+	}
+	.project-container .project .entry-content .project-img img {
+		max-height: 300px;
+		object-fit: cover;
+		width: 100%;
 	}
 	.blogs-container .post .entry-content {
 		flex-direction: column;

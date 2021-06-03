@@ -87,6 +87,11 @@ $xl: 1200px;
     flex-direction: column;
     .project-content {
     }
+    .project-img img {
+        max-height: 300px;
+          object-fit: cover;
+          width: 100%;
+    }
   }
   .blogs-container .post {
     .entry-content {
