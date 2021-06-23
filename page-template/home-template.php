@@ -1,3 +1,9 @@
+<?php
+/**
+ * Template Name: Home Page Template
+ **/
+?>
+
 <?php get_header(); ?>
 
 <section class="wrapper" id="home-wrapper">

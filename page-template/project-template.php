@@ -12,13 +12,13 @@
       <h2 class="title "> Projects </h2>
     </div>
     <div class="container-desc">
-      <p>Collection of my WordPress Themes.</p>
+      <p>Collection of my CMS Themes.</p>
     </div>
     <div class="project-container page-project">
         <?php 
             $args = array (
               'post_type' => 'project',
-              'posts_per_page' => 5,
+              'posts_per_page' => -1,
             );
             $blogposts = new WP_Query($args);
             while ($blogposts->have_posts()) {
