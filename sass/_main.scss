@@ -192,6 +192,9 @@ blockquote {
       color: $color-light;
       border: none;
       cursor: pointer;
+      &:hover {
+        background-color: lighten($color-secondary, 5%);
+      }
     }
   }
 }
@@ -229,6 +232,7 @@ blockquote {
       a {
         color: $color-light;
         font-weight: 600;
+        transition: 0.2s ease;
         &:hover {
           letter-spacing: 3px;
         }
@@ -237,6 +241,7 @@ blockquote {
     .footer-mail {
       a {
         color: $color-light;
+        transition: 0.2s ease-in-out;
         &:hover {
           letter-spacing: 3px;
         }
@@ -299,6 +304,7 @@ blockquote {
   }
   .name {
     color: $color-secondary;
+    transition: 0.2s ease-in-out;
     &:hover {
       letter-spacing: 5px;
     }
@@ -315,6 +321,8 @@ blockquote {
     box-shadow: 0.1em 0.1em $color-background;
     text-decoration: none;
     transition: 0.2s ease-in-out;
+    border-radius: $border-radius;
+    font-weight: 600;
     &:hover {
       transform: translate(-0.15em, -0.15em);
       box-shadow: 0.3em 0.3em $color-background;
@@ -519,6 +527,7 @@ blockquote {
     text-decoration: none;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+    border-radius: $border-radius;
     .fa-star-of-life {
       margin-left: 5px;
     }
@@ -579,6 +588,9 @@ blockquote {
     max-width: 650px;
     width: 100%;
     .wpcf7-form {
+      p .ajax-loader {
+        display: none;
+      }
       p:nth-of-type(4) {
         text-align: end;
       }
@@ -1131,9 +1143,15 @@ blockquote {
   display: flex;
   justify-content: space-between;
   margin: 4rem 0;
+  .next-link {
+    padding: 1rem 10px 1rem 15px;
+  }
   .prev-link,
   .next-link {
     font-size: 1.25rem;
+    border: 1px solid $color-primary;
+    padding: 1rem 10px 1rem 15px;
+    border-radius: 6px;
     a {
       text-decoration: none;
       color: $color-secondary;

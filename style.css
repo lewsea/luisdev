@@ -1121,6 +1121,10 @@ blockquote::before {
 	cursor: pointer;
 }
 
+#searchform .input-group #searchsubmit:hover {
+	background-color: #0283f1;
+}
+
 .site-footer {
 	position: relative;
 	background-color: #292b2c;
@@ -1162,6 +1166,7 @@ blockquote::before {
 .site-footer .container .blockquote-footer a {
 	color: #fff;
 	font-weight: 600;
+	transition: 0.2s ease;
 }
 
 .site-footer .container .blockquote-footer a:hover {
@@ -1170,6 +1175,7 @@ blockquote::before {
 
 .site-footer .container .footer-mail a {
 	color: #fff;
+	transition: 0.2s ease-in-out;
 }
 
 .site-footer .container .footer-mail a:hover {
@@ -1227,6 +1233,7 @@ blockquote::before {
 
 #home-wrapper .name {
 	color: #0275d8;
+	transition: 0.2s ease-in-out;
 }
 
 #home-wrapper .name:hover {
@@ -1246,6 +1253,8 @@ blockquote::before {
 	box-shadow: 0.1em 0.1em #f6f6f6;
 	text-decoration: none;
 	transition: 0.2s ease-in-out;
+	border-radius: 8px;
+	font-weight: 600;
 }
 
 #home-wrapper .theme-btn:hover {
@@ -1474,6 +1483,7 @@ blockquote::before {
 	text-decoration: none;
 	cursor: pointer;
 	transition: 0.2s ease-in-out;
+	border-radius: 8px;
 }
 
 .view-btn .theme-btn .fa-star-of-life {
@@ -1536,6 +1546,10 @@ blockquote::before {
 	padding: 2rem;
 	max-width: 650px;
 	width: 100%;
+}
+
+.contact-form-container .wpcf7 .wpcf7-form p .ajax-loader {
+	display: none;
 }
 
 .contact-form-container .wpcf7 .wpcf7-form p:nth-of-type(4) {
@@ -2128,9 +2142,16 @@ blockquote::before {
 	margin: 4rem 0;
 }
 
+.single-blog-pagination .next-link {
+	padding: 1rem 10px 1rem 15px;
+}
+
 .single-blog-pagination .prev-link,
 .single-blog-pagination .next-link {
 	font-size: 1.25rem;
+	border: 1px solid #292b2c;
+	padding: 1rem 10px 1rem 15px;
+	border-radius: 6px;
 }
 
 .single-blog-pagination .prev-link a,
