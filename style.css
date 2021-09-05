@@ -1645,6 +1645,10 @@ blockquote::before {
 	font-size: 1.15rem;
 }
 
+.single-post-wrapper .container .post .entry-content p a {
+	color: #0275d8;
+}
+
 .related-title {
 	color: #1a252a;
 	padding: 0.2em 0.3em;
@@ -2451,6 +2455,10 @@ blockquote::before {
 #breadcrumbs span span a {
 	color: #292b2c;
 	text-decoration: none;
+}
+
+#breadcrumbs span span .breadcrumb_last {
+	font-weight: 500;
 }
 
 @media (max-width: 375px) {

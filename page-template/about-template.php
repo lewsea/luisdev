@@ -37,7 +37,12 @@
       <br>
       <span class="now-im-motivated">― Vergil awaiting Dante's arrival</span></p>
       <h4 class="about-title">Hobbies</h4> 
-      <p class="about-desc">When i'm not coding or designing i usually play games in my phone or draw in my notebook mostly just a sketch when i feel motivated. I also watch anime and dramas mostly comedy and romance, or binge read the whole manga/webtoon i took interest in a day. I am also studying korean language at <a href="https://talktomeinkorean.com/learningcenter/" target="_blank">TTMIK</a> and currently at level 4, though my vocabulary is good my sentence building and grammar is still a bit off. Lastly i play <a href="https://www.chess.com/member/lewsea" target="_blank">Chess</a> and <a href="https://lichess.org/@/lewsea" target="_blank">Lichess</a> to gain a bit of focus.</p>
+      <p class="about-desc">When i'm not coding or designing i usually play games in my phone or draw in my notebook mostly just a sketch when i feel motivated. I also watch anime and dramas mostly comedy and romance, or binge read the whole manga/webtoon i took interest in a day. I am also studying korean language at <a href="https://talktomeinkorean.com/learningcenter/" target="_blank">TTMIK</a> and currently at level 5
+        <!-- <img src="http://luisgudmalin.online/wp-content/uploads/2021/07/Screenshot-2021-06-26-171432.png" alt="Me doing the level test" title="Me doing the level test"> 
+        <p>    -->
+       though my vocabulary is good my sentence building and grammar is still a bit off. Lastly i play <a href="https://www.chess.com/member/lewsea" target="_blank">Chess</a> and <a href="https://lichess.org/@/lewsea" target="_blank">Lichess</a> to gain a bit of focus.
+       <!-- <img src="http://luisgudmalin.online/wp-content/uploads/2021/07/Screenshot-2021-06-24-074115.png" alt="my rating on lichess" title="my rating on lichess"> -->
+       </p>
       <h4 class="about-title">Follow</h4>
         <div class="about-socials">
             <a href="https://https//www.linkedin.com/in/luis-gudmalin-8b0349195/"><i class="fab fa-linkedin"></i> LinkedIn</a>

@@ -208,3 +208,29 @@ function project_post_type() {
 }
 
 add_action('init', 'project_post_type');
+
+// Coding Challenges Post Type
+
+function coding_post_type() {
+	register_post_type('coding', 
+	array(
+		'rewrite' => array('slug' => 'codings'),
+		'labels' => array(
+			'name' => 'Codings',
+			'singular_name' => 'Coding',
+			'add_new_item' => 'Add New Coding',
+			'edit_item' => 'Edit Coding'
+		),
+		'menu-icon'  => 'dashicons-clipboard',
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array(
+			'title', 'thumbnail', 'editor', 'excerpt', 
+		)
+		)
+	);
+    // Adding tags to custom posts types
+    register_taxonomy_for_object_type( 'post_tag', 'coding' );
+}
+
+add_action('init', 'coding_post_type');

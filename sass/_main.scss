@@ -679,6 +679,9 @@ blockquote {
         border: 4px dashed $color-primary;
         p {
           font-size: $font-size-text;
+          a {
+            color: $color-secondary;
+          }
         }
       }
     }
@@ -1406,6 +1409,9 @@ blockquote {
       a {
         color: $color-anchor;
         text-decoration: none;
+      }
+      .breadcrumb_last {
+        font-weight: 500;
       }
     }
   }

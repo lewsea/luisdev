@@ -19,6 +19,40 @@
     </div>
 </section>
 
+<section class="wrapper" id="coding-wrapper">
+  <div class="container">
+    <div class="container-title">
+        <h2 class="title"> Coding Challenges </h2>
+    </div>
+    <div class="coding-container project-container">
+        <?php 
+            $args = array (
+              'post_type' => 'coding',
+              'posts_per_page' => 3,
+            );
+            $blogposts = new WP_Query($args);
+            while ($blogposts->have_posts()) {
+              $blogposts->the_post();
+        ?>
+            <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+              <div class="entry-content">
+                <div class="project-content">
+                  <p class="theme-site" ><?php echo the_field('what_theme') ?></p>
+                  <div class="theme-title">
+                    <a href="<?php the_permalink()?>"><?php the_title( '<h2 class="entry-title">', '</h2>' ); ?></a>
+                    <p><?php echo the_field('version') ?></p>
+                  </div> 
+                  <p class="theme-desc"><?php echo wp_trim_words(get_the_excerpt(), 25); ?></p>
+                  <a href="<?php the_permalink()?>" class="view-proj" >View Challenge</a>
+                </div>	
+              </div>
+            </article>
+        <?php } wp_reset_query(); ?>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="wrapper" id="project-wrapper">
   <div class="container">
     <div class="container-title">
@@ -39,7 +73,7 @@
                 <div class="project-content">
                   <p class="theme-site" ><?php echo the_field('what_theme') ?></p>
                   <div class="theme-title">
-                    <a href="<?php the_permalink()?>"><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></a>
+                    <a href="<?php the_permalink()?>"><?php the_title( '<h2 class="entry-title">', '</h2>' ); ?></a>
                     <p><?php echo the_field('version') ?></p>
                   </div> 
                   <p class="theme-desc" ><?php echo wp_trim_words(get_the_excerpt(), 25); ?></p>
