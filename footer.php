@@ -31,9 +31,11 @@
             <i class="fas fa-arrow-up"></i>
         </div>
 	</footer>
-	<div class="credit">
+	<!-- 
+        decided to remove for a moment, thank you
+    <div class="credit">
 		<p><a href="https://stylestage.dev/styles/simple-blue-roboto/">Styles</a> by <a href="http://programacionymas.com/">JCarlosR</a>. Thanks <3 </p>
-	</div>
+	</div> -->
 </div>
 
 <?php wp_footer(); ?>

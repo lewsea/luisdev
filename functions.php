@@ -214,7 +214,7 @@ add_action('init', 'project_post_type');
 function coding_post_type() {
 	register_post_type('coding', 
 	array(
-		'rewrite' => array('slug' => 'codings'),
+		'rewrite' => array('slug' => 'coding'),
 		'labels' => array(
 			'name' => 'Codings',
 			'singular_name' => 'Coding',

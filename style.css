@@ -1322,7 +1322,7 @@ blockquote::before {
 	align-items: center;
 }
 
-.project-container .project .entry-content .project-content .theme-title a h1 {
+.project-container .project .entry-content .project-content .theme-title a h2 {
 	margin: 10px 0;
 	margin-right: 10px;
 	margin-top: 5px;
@@ -1647,6 +1647,8 @@ blockquote::before {
 
 .single-post-wrapper .container .post .entry-content p a {
 	color: #0275d8;
+	display: inline;
+	color: #0275d8;
 }
 
 .related-title {
@@ -1684,6 +1686,176 @@ blockquote::before {
 
 .related-blog-block a .blog-inner {
 	border: 1px solid #f6f6f6;
+}
+
+.single-coding-wrapper .coding .entry-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.single-coding-wrapper .coding .entry-header .entry-title {
+	font-size: 5rem;
+	font-size: clamp(2rem, 7vw, 5rem);
+	margin: 0;
+	margin-right: 10px;
+}
+
+.single-coding-wrapper .coding .entry-header .theme-site {
+	background-color: #0275d8;
+	color: #fff;
+	font-size: 12px;
+	display: inline;
+	padding: 5px;
+	margin: 0;
+}
+
+.single-coding-wrapper .coding .entry-header p {
+	margin: 0;
+}
+
+.single-coding-wrapper .coding .post-thumbnail {
+	border: 2px solid #292b2c;
+	box-shadow: 0.8em 0.8em rgba(2, 117, 216, 0.5);
+}
+
+.single-coding-wrapper .coding .post-thumbnail img {
+	max-height: 700px;
+	object-fit: cover;
+	object-position: top;
+}
+
+.single-coding-wrapper .coding .btn-links {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-top: 2.5rem;
+}
+
+.single-coding-wrapper .coding .btn-links a {
+	font-size: 1.1rem;
+	display: block;
+	color: #fff !important;
+}
+
+.single-coding-wrapper .coding .entry-content {
+	max-width: 950px;
+	width: 100%;
+	margin: 2.5rem auto;
+	padding: 2rem;
+	border: 4px dashed #292b2c;
+}
+
+.single-coding-wrapper .coding .entry-content a {
+	text-decoration: none;
+	color: #0275d8;
+}
+
+.single-coding-wrapper .coding .entry-content .entry-block {
+	scroll-margin-top: 5rem;
+}
+
+.single-coding-wrapper .coding .entry-content .entry-block:not(:first-of-type) {
+	margin: 2rem 0;
+}
+
+.single-coding-wrapper .coding .entry-content .entry-block .project-navigation h2 {
+	margin: 0;
+	display: inline-block;
+	background-color: #0275d8;
+	color: #f6f6f6;
+	padding: 0.2em 0.3em;
+	text-align: center;
+	margin-bottom: 0.65em;
+	font-size: 2rem;
+	font-size: clamp(1rem, 4vw, 2rem);
+	transition: padding 0.2s ease 0s;
+}
+
+.single-coding-wrapper .coding .entry-content .entry-block .project-navigation h2:hover {
+	padding: 0.25em 0.36em;
+}
+
+.single-coding-wrapper .coding .entry-content .entry-block .project-navigation ul {
+	padding: 0;
+	margin: 0;
+	padding-inline-start: 2rem;
+}
+
+.single-coding-wrapper .coding .entry-content .entry-block .project-navigation ul li::marker {
+	font-size: 1rem;
+	color: #292b2c;
+}
+
+.single-coding-wrapper .coding .entry-content .entry-block .project-navigation ul li a {
+	text-decoration: none;
+	display: inline-grid;
+	padding: 0.5rem;
+	color: #0275d8;
+	font-size: 1rem;
+}
+
+.single-coding-wrapper .coding .entry-content .entry-block .project-navigation ul li a::after {
+	width: 50%;
+	height: 0.2em;
+	background-color: #0275d8;
+	opacity: 0.2;
+	content: "";
+	margin: 0 auto;
+	transition: width ease-in-out 0.8s;
+}
+
+.single-coding-wrapper .coding .entry-content .entry-block .project-navigation ul li a:hover::after, .single-coding-wrapper .coding .entry-content .entry-block .project-navigation ul li a:focus::after {
+	opacity: 1;
+	width: 100%;
+}
+
+.single-coding-wrapper .coding .entry-content .entry-block .design-img {
+	margin: 2rem 0;
+}
+
+.single-coding-wrapper .coding .entry-content .directory-structure p {
+	display: block;
+	width: 100%;
+	line-height: 1.2rem;
+	font-family: monospace;
+	background: #292b2c;
+	color: #fff;
+	padding: 1.5rem;
+	font-size: 14px;
+	max-height: 500px;
+	overflow-y: scroll;
+	border-left: 5px solid #0275d8;
+}
+
+.single-coding-wrapper .coding .entry-content .entry-desc {
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+.single-coding-wrapper .coding .entry-content .theme-tags {
+	margin: 10px 0;
+	font-size: 14px;
+}
+
+.single-coding-wrapper .coding .entry-content .theme-tags a {
+	font-size: 12px;
+	padding: 5px;
+	color: #1a252a;
+	text-decoration: none;
+	border: 1px solid #0275d8;
+	display: inline-block;
+	margin: 2px;
+}
+
+.single-coding-wrapper .coding .entry-content .theme-tags a:hover {
+	color: #fff;
+	background-color: #0275d8;
+	text-decoration: none;
+}
+
+.single-coding-wrapper .coding .entry-content p {
+	font-size: 1.15rem;
 }
 
 .single-project-wrapper .project .entry-header {
@@ -2459,6 +2631,79 @@ blockquote::before {
 
 #breadcrumbs span span .breadcrumb_last {
 	font-weight: 500;
+}
+
+.coding-container .coding .entry-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.coding-container .coding .coding-image {
+	height: 250px;
+}
+
+.coding-container .coding .coding-image img {
+	height: 250px;
+	max-height: 250px;
+	object-fit: cover;
+	object-position: top;
+	padding: 5px;
+}
+
+.coding-container .coding .theme-site {
+	background-color: #0275d8;
+	color: #fff;
+	font-size: 12px !important;
+	display: inline;
+	padding: 5px;
+}
+
+.coding-container .coding .project-content {
+	padding: 1.5rem;
+	border-radius: 0 0 12px 12px;
+	border: 3px solid #292b2c;
+	border-bottom: 8px solid #0275d8;
+}
+
+.coding-container .coding .project-content p {
+	font-size: 1rem;
+	margin: 0;
+}
+
+.coding-container .coding .project-content a {
+	color: #292b2c;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+.coding-container .coding .project-content a h2 {
+	margin: 10px 0;
+}
+
+.coding-container .coding .project-content a:hover {
+	text-decoration: underline;
+}
+
+.coding-container .coding .project-content .view-coding {
+	font-size: 1rem;
+	color: #fff;
+	background: #292b2c;
+	padding: 10px 15px;
+	box-shadow: 0.18em 0.18em #0275d8;
+	margin-top: 1rem;
+	display: inline-block;
+}
+
+.coding-container .coding .project-content .view-coding:hover {
+	transform: translate(-0.15em, -0.15em);
+	box-shadow: 0.3em 0.3em #0275d8;
+	text-decoration: none;
+}
+
+.single-coding-pagination .prev a img,
+.single-pagination .next a img {
+	max-width: 300px;
+	height: 200px;
 }
 
 @media (max-width: 375px) {
