@@ -90,6 +90,11 @@
             </article>
         <?php } wp_reset_query(); ?>
       </div>
+      <div class="view-btn">
+        <a href="<?php echo site_url('/coding');?>">
+            <button class="theme-btn">View All <i class="fa fa-star-of-life"></i> </button>
+        </a>
+      </div>
     </div>
   </div>
 </section>

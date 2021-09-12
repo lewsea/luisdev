@@ -1644,4 +1644,17 @@ blockquote {
   height: 200px;
 }
 
+#coding-wrapper {
+  .container-title {
+    padding-top: 3rem;
+  }
+  .coding-container {
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    .coding {
+      width: 30%;
+    }
+  }
+}
+
 @import "responsive";

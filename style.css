@@ -2706,6 +2706,19 @@ blockquote::before {
 	height: 200px;
 }
 
+#coding-wrapper .container-title {
+	padding-top: 3rem;
+}
+
+#coding-wrapper .coding-container {
+	margin-bottom: 3rem;
+	flex-wrap: wrap;
+}
+
+#coding-wrapper .coding-container .coding {
+	width: 30%;
+}
+
 @media (max-width: 375px) {
 	.project-container .project .entry-content .project-content {
 		padding: 1rem;
@@ -2797,6 +2810,9 @@ blockquote::before {
 	}
 	.single-blog-pagination .next-link {
 		text-align: right;
+	}
+	#coding-wrapper .coding-container .coding {
+		width: 100%;
 	}
 }
 

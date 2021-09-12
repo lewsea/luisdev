@@ -88,9 +88,9 @@ $xl: 1200px;
     .project-content {
     }
     .project-img img {
-        max-height: 300px;
-          object-fit: cover;
-          width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      width: 100%;
     }
   }
   .blogs-container .post {
@@ -111,6 +111,11 @@ $xl: 1200px;
     gap: 3rem;
     .next-link {
       text-align: right;
+    }
+  }
+  #coding-wrapper .coding-container {
+    .coding {
+      width: 100%;
     }
   }
 }
