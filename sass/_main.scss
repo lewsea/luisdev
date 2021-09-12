@@ -1587,6 +1587,7 @@ blockquote {
       height: 250px;
       img {
         height: 250px;
+        width: 100%;
         max-height: 250px;
         object-fit: cover;
         object-position: top;
@@ -1644,15 +1645,15 @@ blockquote {
   height: 200px;
 }
 
-#coding-wrapper {
+#page-coding-wrapper {
   .container-title {
     padding-top: 3rem;
   }
   .coding-container {
     margin-bottom: 3rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
     .coding {
-      width: 30%;
+      width: 30% !important;
     }
   }
 }

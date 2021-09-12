@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<div class="" id="coding-wrapper">
+<div class="" id="page-coding-wrapper">
   <div class="container">
     <div div class="container-title page-title">
       <h2 class="title "> Coding Challenges </h2>

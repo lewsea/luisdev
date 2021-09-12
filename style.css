@@ -2644,6 +2644,7 @@ blockquote::before {
 
 .coding-container .coding .coding-image img {
 	height: 250px;
+	width: 100%;
 	max-height: 250px;
 	object-fit: cover;
 	object-position: top;
@@ -2706,17 +2707,17 @@ blockquote::before {
 	height: 200px;
 }
 
-#coding-wrapper .container-title {
+#page-coding-wrapper .container-title {
 	padding-top: 3rem;
 }
 
-#coding-wrapper .coding-container {
+#page-coding-wrapper .coding-container {
 	margin-bottom: 3rem;
-	flex-wrap: wrap;
+	flex-wrap: wrap !important;
 }
 
-#coding-wrapper .coding-container .coding {
-	width: 30%;
+#page-coding-wrapper .coding-container .coding {
+	width: 30% !important;
 }
 
 @media (max-width: 375px) {
