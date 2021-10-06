@@ -12,7 +12,7 @@
         <h2 class="intro-h1 name">Luis Gudmalin.</h2>
         <h2 class="intro-h1">I <i class="fa fa-terminal"></i> Code and  Draw.</h2>
         <p class="intro-desc">
-          I'm an aspiring web developer looking for opportunities to apply my
+          I'm a web developer looking for opportunities to apply my
           skills in design 🖌 and development 🛠.
         </p>
         <a href="<?php echo site_url('/contact'); ?>" class="theme-btn">Contact Me!</a>
